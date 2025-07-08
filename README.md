@@ -9,8 +9,6 @@ A robust, secure, and scalable Laravel-based RESTful API for advanced project ma
 - [Setup & Installation](#setup--installation)
 - [Testing](#testing)
 - [API Overview](#api-overview)
-- [Contribution](#contribution)
-- [License](#license)
 
 ---
 
