@@ -1,0 +1,76 @@
+<?php
+
+namespace {{ namespace }};
+
+use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+
+class {{ class }} extends Controller
+{
+    // Use Form Requests for validation
+    // Use Policies for authorization
+
+    /**
+     * Display a listing of the resource.
+     */
+    public function index()
+    {
+        //
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     */
+    public function store(Request $request)
+    {
+        //
+    }
+
+    /**
+     * Display the specified resource.
+     */
+    public function show(string $id)
+    {
+        //
+    }
+
+    /**
+     * Update the specified resource in storage.
+     */
+    public function update(Request $request, string $id)
+    {
+        //
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     */
+    public function destroy(string $id)
+    {
+        //
+    }
+
+    /**
+     * Return a success response with data.
+     */
+    protected function successResponse($data = [], $message = 'Operation successful', $code = 200)
+    {
+        return response()->json([
+            'status' => true,
+            'message' => $message,
+            'data' => $data,
+        ], $code);
+    }
+
+    /**
+     * Return an error response with message.
+     */
+    protected function errorResponse($message = 'An error occurred', $code = 400)
+    {
+        return response()->json([
+            'status' => false,
+            'message' => $message,
+            'data' => [],
+        ], $code);
+    }
+}
